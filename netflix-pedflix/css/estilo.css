@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: black;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*-------------------------------------BARRA DE NAVEGAÇÃO DO SITE*/
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+
+}
+
+/*------------------------------------------LOGO*/
+.logo {
+    flex: 20%;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.logo img {
+    height: 60px;
+    max-width: 100%;
+}
+
+/*----------------------------------------SELEÇÃO DA DIREITA*/
+.grupo-topo {
+    flex: 30%;
+}
+
+.select-idioma {
+    appearance: none;
+    margin: 1%;
+    padding: 5px 15px;
+    float: right;
+    background: none;
+    color: white;
+}
+
+.btn-topo {
+    margin: 1% 5% 0% 1%;
+    background: red;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    float: right;
+}
+
+
+/*-----------------------------------------------PATE 1 DO SITE*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*height: 80vh;*/
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(/img/netflix-fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid rgb(54, 54, 54);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.miolo {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px;
+}
+
+.miolo h1 {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px black;
+    padding: 0;
+    margin: 0;
+}
+
+.miolo h2 {
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px black;
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.miolo h3 {
+    color: white;
+    font-weight: 400;
+}
+
+/*----------------------------------------CADASTRO DE EMAIL*/
+.input-container {
+    text-align: center;
+}
+
+.input-email {
+    width: 450px;
+    height: 60px;
+    padding: 30px 40px 20px 10px;
+    margin-right: 0;
+    margin-bottom: 2%;
+    border: 1px solid white;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.input-email::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.input-email:focus::placeholder {
+    color: transparent;
+}
+
+
+.btn-email {
+    background: red;
+    border: 1px solid red;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    padding: 17px;
+    margin-left: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------------------SECÇÕES*/
+section {
+    display: flex;
+    color: white;
+    border-bottom: 8px solid rgb(54, 54, 54);
+    margin-bottom: 2%;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section h2 {
+    font-size: 3rem;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 35px;
+}
+
+/*----------------------------PERGUNTAS FREQUENTES*/
+.pergunta {
+    width: 100%;
+    background: rgb(54, 54, 54);
+    padding: 15px 0px 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.resposta {
+    display: none;
+    width: 100%;
+    background: rgb(54, 54, 54);
+    padding: 15px 0px 15px 25px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/*----------------------------FOOTER*/
+footer {
+    color: gray;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------RESPONSIVIDADE-----*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 950px) {
+
+    [class*="col-"] {
+        width: 100%;
+        text-align: left;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
